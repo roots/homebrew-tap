@@ -1,4 +1,4 @@
-class Trellis < Formula
+class TrellisCLI < Formula
   desc "A CLI to manage Trellis projects"
   homepage "https://roots.io/trellis"
   url "https://github.com/roots/trellis-cli/releases/download/v0.1.1/trellis_0.1.1_Darwin_x86_64.tar.gz"
