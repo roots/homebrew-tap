@@ -3,7 +3,7 @@ class TrellisCli < Formula
   homepage "https://roots.io/trellis"
   url "https://github.com/roots/trellis-cli/releases/download/v0.1.1/trellis_0.1.1_Darwin_x86_64.tar.gz"
   version "0.1.1"
-  sha256 "684aa5ad325383df839d969c22f9cafdf2e41aaab1811e5aa5714ff9d9f093b8"
+  sha256 "c61da88e57cd29a9943608a6f9ce73c2653532fc8a5577c717f8f48e39b4d843"
 
   def install
     bin.install "trellis"
