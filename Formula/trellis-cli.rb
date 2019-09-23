@@ -2,16 +2,16 @@
 class TrellisCli < Formula
   desc "A CLI to manage Trellis projects"
   homepage "https://roots.io/trellis"
-  version "0.5.1"
+  version "0.6.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/roots/trellis-cli/releases/download/v0.5.1/trellis_0.5.1_Darwin_x86_64.tar.gz"
-    sha256 "6bde99ae2570b5ec77400080af3763929b233316b4d4bfe7d564c8788c9d0416"
+    url "https://github.com/roots/trellis-cli/releases/download/v0.6.0/trellis_0.6.0_Darwin_x86_64.tar.gz"
+    sha256 "304b904a8e310f3298e445ff2705a25bd7f23831e0675e9d12858e67f24be9a7"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/roots/trellis-cli/releases/download/v0.5.1/trellis_0.5.1_Linux_x86_64.tar.gz"
-      sha256 "cfb0e436c96faa77b69e994712e17fcd3806c0ee9558affa36b6115e793d8ab1"
+      url "https://github.com/roots/trellis-cli/releases/download/v0.6.0/trellis_0.6.0_Linux_x86_64.tar.gz"
+      sha256 "fa300e45b45984e0f4cb69c9ca1d98b795b8cabfdce8eab7e3704936f1926cf8"
     end
   end
 
