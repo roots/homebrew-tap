@@ -5,20 +5,20 @@
 class TrellisCli < Formula
   desc "A CLI to manage Trellis projects"
   homepage "https://roots.io/trellis"
-  version "1.2.2"
+  version "1.3.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/roots/trellis-cli/releases/download/v1.2.2/trellis_1.2.2_Darwin_x86_64.tar.gz"
-      sha256 "7c2e0ff662977ca7702f05f94628cf49fd5fd89a7b54f465ca5c56b23d9c7e0b"
+    if Hardware::CPU.arm?
+      url "https://github.com/roots/trellis-cli/releases/download/v1.3.0/trellis_1.3.0_Darwin_arm64.tar.gz"
+      sha256 "0af58dd154bb9f6d5cedab435cd7959c64f7c5b0493b6a7c4df9348c5c362582"
 
       def install
         bin.install "trellis"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/roots/trellis-cli/releases/download/v1.2.2/trellis_1.2.2_Darwin_arm64.tar.gz"
-      sha256 "d0bec6f84bde35a90a6a2940fb74a92fa3e1c36643f7fdc15de110f84d140a6d"
+    if Hardware::CPU.intel?
+      url "https://github.com/roots/trellis-cli/releases/download/v1.3.0/trellis_1.3.0_Darwin_x86_64.tar.gz"
+      sha256 "344a85b3eb12cdccadc8d9f68136d427ebd9e43a0333a8d7a9273e66486b97ac"
 
       def install
         bin.install "trellis"
@@ -28,16 +28,16 @@ class TrellisCli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/roots/trellis-cli/releases/download/v1.2.2/trellis_1.2.2_Linux_x86_64.tar.gz"
-      sha256 "eebf8b7464da874394a4f6291fea2b51fb638610251642df53e35ec0e980b6ca"
+      url "https://github.com/roots/trellis-cli/releases/download/v1.3.0/trellis_1.3.0_Linux_x86_64.tar.gz"
+      sha256 "1d654966683b36676d5b0255a16c976f1f394f5dacacf5c7a58926076b96b8b5"
 
       def install
         bin.install "trellis"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roots/trellis-cli/releases/download/v1.2.2/trellis_1.2.2_Linux_arm64.tar.gz"
-      sha256 "359a42e468317bd1782dc64a02eb5ca698fded85cd13e38c9341529f5795e144"
+      url "https://github.com/roots/trellis-cli/releases/download/v1.3.0/trellis_1.3.0_Linux_arm64.tar.gz"
+      sha256 "6e41e58a315a64562c49880b9e8e9b9d0629cc43f86413b4e49797e8275a6b18"
 
       def install
         bin.install "trellis"
