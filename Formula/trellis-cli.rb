@@ -5,20 +5,20 @@
 class TrellisCli < Formula
   desc "A CLI to manage Trellis projects"
   homepage "https://roots.io/trellis"
-  version "1.6.0"
+  version "1.6.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/roots/trellis-cli/releases/download/v1.6.0/trellis_1.6.0_Darwin_x86_64.tar.gz"
-      sha256 "9f667d0f61f712429aa73d0a6db2626f0d73173832e32b655011ebb65874de86"
+      url "https://github.com/roots/trellis-cli/releases/download/v1.6.1/trellis_1.6.1_Darwin_x86_64.tar.gz"
+      sha256 "57c85d4d6f8701fe1b5ec32d36d86f5eb74352e2e6865a0374104e2f51facea7"
 
       def install
         bin.install "trellis"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/roots/trellis-cli/releases/download/v1.6.0/trellis_1.6.0_Darwin_arm64.tar.gz"
-      sha256 "d44d3f58413e8b7f04662c590c7d095b7cca1e665bcad698d0a7fa0aa1440383"
+      url "https://github.com/roots/trellis-cli/releases/download/v1.6.1/trellis_1.6.1_Darwin_arm64.tar.gz"
+      sha256 "44f7f8ebe2f401d2a47613422dde7c7a2d05f786cadd7198e8e3afa3731001f7"
 
       def install
         bin.install "trellis"
@@ -27,17 +27,17 @@ class TrellisCli < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/roots/trellis-cli/releases/download/v1.6.0/trellis_1.6.0_Linux_x86_64.tar.gz"
-      sha256 "7bcebf3057b0070be1df52cb8703e7ee727ae06c71ce85fe7df0e1c9e0d9ca43"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/roots/trellis-cli/releases/download/v1.6.1/trellis_1.6.1_Linux_arm64.tar.gz"
+      sha256 "8b46452d58101bd8ce06895062145c6a895db5d715c7bf26fce65373482f9cc6"
 
       def install
         bin.install "trellis"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roots/trellis-cli/releases/download/v1.6.0/trellis_1.6.0_Linux_arm64.tar.gz"
-      sha256 "e9918f4531aa1907bf9bb6deb97ba5f41c46580c5f878865ef3a4b9133a25ba5"
+    if Hardware::CPU.intel?
+      url "https://github.com/roots/trellis-cli/releases/download/v1.6.1/trellis_1.6.1_Linux_x86_64.tar.gz"
+      sha256 "779d2968ad3bfef43e189c518eabff8c6b2acca767656599b4208ab07f856e2a"
 
       def install
         bin.install "trellis"
