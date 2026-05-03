@@ -5,20 +5,20 @@
 class TrellisCli < Formula
   desc "A CLI to manage Trellis projects"
   homepage "https://roots.io/trellis"
-  version "1.18.0"
+  version "1.19.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/roots/trellis-cli/releases/download/v1.18.0/trellis_Darwin_x86_64.tar.gz"
-      sha256 "5151f6af04355999d5bd72cbdca41a6b06e872470215477e78872857f2a4c8a0"
+      url "https://github.com/roots/trellis-cli/releases/download/v1.19.0/trellis_Darwin_x86_64.tar.gz"
+      sha256 "111911696a2c3834048dce6a43b3d22d5986469b048a65bbcf736f8f99cde736"
 
       define_method(:install) do
         bin.install "trellis"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/roots/trellis-cli/releases/download/v1.18.0/trellis_Darwin_arm64.tar.gz"
-      sha256 "51194c5685ca5b17f3735a432b43c0d1dfa8643b126fd25ce3f248688543e9ba"
+      url "https://github.com/roots/trellis-cli/releases/download/v1.19.0/trellis_Darwin_arm64.tar.gz"
+      sha256 "466d8d11c6f11eefe8f263ea877c0549eaff64b3f962ad6a04b313fb608cbaf6"
 
       define_method(:install) do
         bin.install "trellis"
@@ -28,15 +28,15 @@ class TrellisCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roots/trellis-cli/releases/download/v1.18.0/trellis_Linux_x86_64.tar.gz"
-      sha256 "66409ecf1e5117b99f967ab0bbe08d7445a6579244f3689fe7b4d257031161e4"
+      url "https://github.com/roots/trellis-cli/releases/download/v1.19.0/trellis_Linux_x86_64.tar.gz"
+      sha256 "4984178e054f54dc5e1b2418a58e1e65f48f3c868ec26be8d389b337473f5347"
       define_method(:install) do
         bin.install "trellis"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roots/trellis-cli/releases/download/v1.18.0/trellis_Linux_arm64.tar.gz"
-      sha256 "f9910efbb2bd0aecb0b8d053dfe1f57b87387bd12bcc294fdc9cc6cfeae83ae3"
+      url "https://github.com/roots/trellis-cli/releases/download/v1.19.0/trellis_Linux_arm64.tar.gz"
+      sha256 "de0ac3bf80bdb1eabcf44815988ef6430e4c74563732aef8790ca855defd3456"
       define_method(:install) do
         bin.install "trellis"
       end
